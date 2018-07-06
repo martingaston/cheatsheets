@@ -1,4 +1,5 @@
 # Git Cheatsheet
+### Or, when you've *really* gone and done it: https://blog.github.com/2015-06-08-how-to-undo-almost-anything-with-git/
 
 ### Pull a repo:
 
