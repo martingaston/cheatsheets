@@ -55,3 +55,16 @@
 ### Push branch to GitHub
 
 `$ git push origin my_branch`
+
+### Switch between HTTPS or SSL
+
+```bash
+# check the current remote url
+$ git remote -v
+# change the url to SSH...
+$ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+# or change it to HTTPS...
+$ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+# verify it's changed :)
+$ git remote -v 
+`
