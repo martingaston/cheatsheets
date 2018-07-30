@@ -55,3 +55,27 @@
 ### Push branch to GitHub
 
 `$ git push origin my_branch`
+
+### Switch between HTTPS or SSL
+
+```bash
+# check the current remote url
+$ git remote -v
+# change the url to SSH...
+$ git remote set-url origin git@github.com:USERNAME/REPOSITORY.git
+# or change it to HTTPS...
+$ git remote set-url origin https://github.com/USERNAME/REPOSITORY.git
+# verify it's changed :)
+$ git remote -v 
+```
+
+### Create a repository on the command line
+
+```bash
+echo "# [REPONAME]" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git remote add origin git@github.com:USERNAME/REPOSITORY.git #SSH
+git push -u origin master # -u/--set-upstream sets an 'argument-less git pull' 
+```
