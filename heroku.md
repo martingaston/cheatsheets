@@ -53,6 +53,15 @@ $ heroku config:set KEY=VALUE
 $ heroku config:unset KEY
 ```
 
+### Set Postgres
+
+```bash
+$ heroku addons:create heroku-postgresql:hobby-dev # Heroku saves its database as a DATABASE_URL environment variables
+$ heroku pg:info
+$ heroku pg:psql
+$ heroku pg:credentials:url DATABASE
+```
+
 ### Bash
 
 ```bash
